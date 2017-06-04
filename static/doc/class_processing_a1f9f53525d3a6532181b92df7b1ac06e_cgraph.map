@@ -1,0 +1,26 @@
+<map id="Processing::apply_transform" name="Processing::apply_transform">
+<area shape="rect" id="node2" href="$class_lexeme.html#ae759cd630d331ca5523df94bc691aa96" title="Get lexeme&#39;s type. " alt="" coords="280,5,381,31"/>
+<area shape="rect" id="node3" href="$class_lexeme.html#a9065d258863b67a22af159806e59b7b3" title="Get lexeme as string. " alt="" coords="271,55,390,80"/>
+<area shape="rect" id="node4" href="$class_processing.html#a206ef863b3dcfe27aea83fbbe7170935" title="Apply default transform. " alt="" coords="244,104,418,143"/>
+<area shape="rect" id="node6" href="$namespacestr.html#a0821aeb19650507a9d6e334d13e558fa" title="str::split" alt="" coords="500,164,567,189"/>
+<area shape="rect" id="node7" href="$namespacestr.html#ae336edb6b435b43b95e954032b6ee5df" title="str::remove_first" alt="" coords="272,219,389,244"/>
+<area shape="rect" id="node8" href="$namespacestr.html#a8d82bb310509bffb9c80a03b19e4ea1f" title="str::remove_last" alt="" coords="273,268,389,293"/>
+<area shape="rect" id="node9" href="$namespacestr.html#acff190f7a4a9a1d3d4554fb54418774f" title="str::trimmed" alt="" coords="285,317,376,343"/>
+<area shape="rect" id="node12" href="$namespacestr.html#a10a1456fa46eba428e6076bef4a746b8" title="str::starts_with" alt="" coords="277,367,384,392"/>
+<area shape="rect" id="node13" href="$namespacestr.html#a5fd9b00443a0f1397ebb4351db0b8a39" title="str::ends_with" alt="" coords="279,416,382,441"/>
+<area shape="rect" id="node14" href="$class_g_logger.html#aba5c149d4ef5bc3245b7df6c7a80a298" title="Get single instance of GLogger. " alt="" coords="265,465,396,491"/>
+<area shape="rect" id="node15" href="$class_g_logger.html#aecf6a39150aefc28c9ebbe81c673e05e" title="Logging with error level. " alt="" coords="267,515,395,540"/>
+<area shape="rect" id="node5" href="$namespacestr.html#a4908134c5509c21c366ceef01c98f80a" title="str::find" alt="" coords="501,111,566,136"/>
+<area shape="rect" id="node10" href="$namespacestr.html#afc957ba53ca432365820541c1de2cceb" title="str::ltrim" alt="" coords="499,293,568,319"/>
+<area shape="rect" id="node11" href="$namespacestr.html#aeb738bdf8c3b904cc5f83d03f86b9306" title="str::rtrim" alt="" coords="498,343,569,368"/>
+<area shape="rect" id="node16" href="$class_g_logger.html#ac4620332056e22ae0c910b4dfa56bf88" title="Inner logging method to perform console/file output. " alt="" coords="466,515,601,540"/>
+<area shape="rect" id="node17" href="$class_g_logger.html#a0d796841d8ea54e2f749145985fef29f" title="unpacks the last argument of variadic template arguments sequence " alt="" coords="665,304,788,329"/>
+<area shape="rect" id="node18" href="$class_g_logger.html#a794dc104bc476c85465ec229a598720c" title="Write constructed message to file or stdout/stderr. " alt="" coords="660,353,794,392"/>
+<area shape="rect" id="node19" href="$class_g_logger.html#a35a86fbfd4375b8ed97a42fc00cfa18a" title="Get string name from Level. " alt="" coords="652,416,801,441"/>
+<area shape="rect" id="node20" href="$class_g_logger.html#afe03431e6c48ee5ccd80e5a0fe5eb513" title="Copy file from one location to another. " alt="" coords="660,465,793,491"/>
+<area shape="rect" id="node21" href="$class_g_logger.html#a944ac6b22b4122ae7eb5c8a0f3e7fa43" title="Get file size. " alt="" coords="662,515,791,540"/>
+<area shape="rect" id="node22" href="$class_g_logger.html#aefeb6a4305827d989dcbb0c8314dbd74" title="Checks whether file exists. " alt="" coords="669,564,784,589"/>
+<area shape="rect" id="node23" href="$class_g_logger.html#a5847885b8992923f334089a4dce611dc" title="Current time as string. " alt="" coords="649,613,804,639"/>
+<area shape="rect" id="node24" href="$class_g_logger.html#a1b76f2bded6b942f1af8afe0cd42180d" title="Remove leading and trailing spaces. " alt="" coords="675,663,778,688"/>
+<area shape="rect" id="node25" href="$class_g_logger.html#a46789513bfde9d2731c616956354fd0c" title="Get path basename. " alt="" coords="655,712,798,737"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="str::find" name="str::find">
+<area shape="rect" id="node2" href="$class_detector.html#ac1b6beae1ca250bd975d8aedb6eb4ec7" title="Parse file stream with C code to detect convertable formulas and write them to output stream..." alt="" coords="143,5,268,31"/>
+<area shape="rect" id="node3" href="$class_processing.html#a206ef863b3dcfe27aea83fbbe7170935" title="Apply default transform. " alt="" coords="118,55,292,93"/>
+<area shape="rect" id="node4" href="$class_lexeme_tree.html#a08a0bcfd71628baa34647d98eeed48e8" title="Recursive transformation. " alt="" coords="579,61,738,87"/>
+<area shape="rect" id="node5" href="$class_processing.html#a1f9f53525d3a6532181b92df7b1ac06e" title="Apply transformation. " alt="" coords="340,87,531,112"/>
+</map>

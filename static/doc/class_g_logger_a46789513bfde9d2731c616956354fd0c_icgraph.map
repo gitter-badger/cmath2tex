@@ -1,0 +1,22 @@
+<map id="GLogger::basename" name="GLogger::basename">
+<area shape="rect" id="node2" href="$class_g_logger.html#ac4620332056e22ae0c910b4dfa56bf88" title="Inner logging method to perform console/file output. " alt="" coords="196,195,332,220"/>
+<area shape="rect" id="node3" href="$class_g_logger.html#ad041bbe8f8b3472f118234b1c33bbf42" title="Logging without level. " alt="" coords="399,64,498,89"/>
+<area shape="rect" id="node4" href="$class_g_logger.html#ab877fe0a647c962a2e6c806b17b4cb14" title="Logging with trace level. " alt="" coords="618,169,750,195"/>
+<area shape="rect" id="node8" href="$class_g_logger.html#a433d8fb9363efe33f0333ce049816fb7" title="Logging with debug level. " alt="" coords="380,113,517,139"/>
+<area shape="rect" id="node12" href="$class_g_logger.html#a316ab6a1b51f4b6bbf1fb307bdf9c97c" title="Logging with info level. " alt="" coords="388,293,509,319"/>
+<area shape="rect" id="node15" href="$class_g_logger.html#a6cb054c4a2040b8ecb2fac31138348d7" title="Logging with warn level. " alt="" coords="384,391,513,416"/>
+<area shape="rect" id="node17" href="$class_g_logger.html#aecf6a39150aefc28c9ebbe81c673e05e" title="Logging with error level. " alt="" coords="385,220,513,245"/>
+<area shape="rect" id="node5" href="$class_c_math2_tex.html#a82142c9da027605309f4a5eb6cf08794" title="Analyze tokens and convert formulas to LaTeX format. " alt="" coords="857,117,1005,143"/>
+<area shape="rect" id="node6" href="$class_lexeme_tree.html#a08a0bcfd71628baa34647d98eeed48e8" title="Recursive transformation. " alt="" coords="851,279,1011,304"/>
+<area shape="rect" id="node7" href="$class_lexeme_tree.html#aa1f714f67e369a0672e50f326c71c0d8" title="Recursive tree print. " alt="" coords="861,167,1001,192"/>
+<area shape="rect" id="node9" href="$class_c_math2_tex.html#affead041c1132f1db3d16a06749d5b23" title="CMath2Tex::CMath2Tex" alt="" coords="602,5,766,31"/>
+<area shape="rect" id="node10" href="$class_c_math2_tex.html#a8397856723609a63405d37bcda39326a" title="Devide text in tokens. " alt="" coords="617,107,750,145"/>
+<area shape="rect" id="node11" href="$class_c_math2_tex.html#a8a3c82efdb36d245cf2f428474be8c99" title="Convert C formula to LaTeX. " alt="" coords="857,68,1005,93"/>
+<area shape="rect" id="node13" href="$class_detector.html#a24c56284ce045c6e6cb8143076075a59" title="Process detected formula, apply filter, write to stream. " alt="" coords="621,367,747,392"/>
+<area shape="rect" id="node14" href="$class_detector.html#ac1b6beae1ca250bd975d8aedb6eb4ec7" title="Parse file stream with C code to detect convertable formulas and write them to output stream..." alt="" coords="868,367,993,392"/>
+<area shape="rect" id="node16" href="$class_c_math2_tex.html#a6f938d869d76398acb2ff3c2dbf131c2" title="Get hit count for specified group. " alt="" coords="604,416,763,441"/>
+<area shape="rect" id="node18" href="$class_lexeme_tree.html#a9a570a79aff68987b34f9f88cc75bbe4" title="Save parenthesis position. " alt="" coords="565,219,802,244"/>
+<area shape="rect" id="node20" href="$class_lexeme_tree.html#aa9eceea309b9006c49ffd81cbd39fb0a" title="Recursive display. " alt="" coords="611,317,756,343"/>
+<area shape="rect" id="node21" href="$class_processing.html#a1f9f53525d3a6532181b92df7b1ac06e" title="Apply transformation. " alt="" coords="589,268,779,293"/>
+<area shape="rect" id="node19" href="$struct_lexeme_tree_1_1_tree_node.html#ab9f139d5242e19dc766e0948351ad8fd" title="LexemeTree::TreeNode\l::TreeNode" alt="" coords="850,216,1012,255"/>
+</map>

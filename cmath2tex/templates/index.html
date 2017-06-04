@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block content %}
+<div id="container">
+    <div class="inner">
+        <header>
+            <h1>CMath2Tex</h1>
+            <h2>
+                {{ data['head'] }}
+            </h2>
+        </header>
+        <section id="downloads" class="clearfix">
+            <a href="https://github.com/galarius/cmath2tex.git" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+        <hr>
+        <section id="main_content">
+            {{ data['introduction'] }}
+            <h2 id="getting-started">Getting started</h2>
+            {{ data['getting-started'] }}
+            <h2 id="usage">Usage</h2>
+            {{ data['usage'] }}
+            <h2 id="configuration">Contributing</h2>
+            {{ data['contributing'] }}
+            <h2 id="configuration">Documentation</h2>
+            {{ data['documentation'] }}
+            <h2 id="license">CMath2Tex License</h2>
+            {{ data['license'] }}
+        </section>
+        <footer>
+            CMath2Tex is maintained by <a href="https://github.com/galarius">galarius</a>
+        </footer>
+    </div>
+</div>
+{% endblock %}

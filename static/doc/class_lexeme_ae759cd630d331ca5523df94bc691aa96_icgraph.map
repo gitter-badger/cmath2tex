@@ -1,0 +1,7 @@
+<map id="Lexeme::type" name="Lexeme::type">
+<area shape="rect" id="node2" href="$class_c_math2_tex.html#a82142c9da027605309f4a5eb6cf08794" title="Analyze tokens and convert formulas to LaTeX format. " alt="" coords="447,5,594,31"/>
+<area shape="rect" id="node3" href="$class_lexeme_tree.html#a9a570a79aff68987b34f9f88cc75bbe4" title="Save parenthesis position. " alt="" coords="155,56,391,81"/>
+<area shape="rect" id="node5" href="$class_lexeme_tree.html#a08a0bcfd71628baa34647d98eeed48e8" title="Recursive transformation. " alt="" coords="440,137,600,163"/>
+<area shape="rect" id="node6" href="$class_processing.html#a1f9f53525d3a6532181b92df7b1ac06e" title="Apply transformation. " alt="" coords="178,157,368,183"/>
+<area shape="rect" id="node4" href="$struct_lexeme_tree_1_1_tree_node.html#ab9f139d5242e19dc766e0948351ad8fd" title="LexemeTree::TreeNode\l::TreeNode" alt="" coords="439,55,601,93"/>
+</map>
