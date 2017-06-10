@@ -1,5 +1,7 @@
 # CMath2Tex 
 
+[![Join the chat at https://gitter.im/cmath2tex/Lobby](https://badges.gitter.im/cmath2tex/Lobby.svg)](https://gitter.im/cmath2tex/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ### Generates `LaTeX` math equations from `C` source code.
 
 `CMath2Tex` is the tool to simplify documentation generation for source code with a lot of math expressions. 
