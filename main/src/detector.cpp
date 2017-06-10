@@ -11,10 +11,10 @@
 #include "glogger.hpp"
 #include "i18n.hpp"
 
-Detector::Detector(std::shared_ptr<CTex> ctex) :
+Detector::Detector(std::shared_ptr<CMath2Tex> cmath2tex) :
 min_op_count_(0)
 , min_fn_count_(0)
-, ctex_(ctex)
+, cmath2tex_(cmath2tex)
 { }
 
 void Detector::perform(std::ifstream& in, std::ofstream& out)
@@ -124,16 +124,16 @@ void Detector::set_filter(int min_op_count, int min_fn_count)
 
 void Detector::process(const std::string& formula, std::ofstream& stream)
 {
-    static const std::string id = "CTEX";
+    static const std::string id = "cmath2tex";
     std::string res, log;
     GLogger::instance().start_record();
     GLogger::instance().logInfo("Input: "_i18n, formula);
-    res = ctex_->translate(formula);
+    res = cmath2tex_->translate(formula);
     GLogger::instance().logInfo("Output:"_i18n, res, "\n");
     log = GLogger::instance().end_record();
     // apply filter
-    if (ctex_->group_hits("operator") > min_op_count_ ||
-        ctex_->group_hits("function") > min_fn_count_)
+    if (cmath2tex_->group_hits("operator") > min_op_count_ ||
+        cmath2tex_->group_hits("function") > min_fn_count_)
     {
         stream << std::endl << "/** " << id << std::endl;
         stream << log;

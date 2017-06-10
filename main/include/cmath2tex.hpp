@@ -1,13 +1,13 @@
 /**
- * @file ctex.hpp
+ * @file cmath2tex.hpp
  * @date 03.06.17
  * @author galarius
  * @copyright   Copyright © 2017 galarius. All rights reserved.
  * @brief Formla parser and converter from C language into LaTeX
  */
 
-#ifndef ctex_hpp
-#define ctex_hpp
+#ifndef cmath2tex_hpp
+#define cmath2tex_hpp
 
 #include "lexeme.hpp"
 
@@ -18,7 +18,7 @@
 /**
  * @brief Formla parser and converter from C language into LaTeX.
  */
-class CTex
+class CMath2Tex
 {
 public:
     /**
@@ -44,14 +44,14 @@ public:
      *   };
      * @endcode
      */
-    explicit CTex(const std::vector<std::pair<std::string, std::string>>& grouped_regs);
+    explicit CMath2Tex(const std::vector<std::pair<std::string, std::string>>& grouped_regs);
     
-    ~CTex() = default;
+    ~CMath2Tex() = default;
     
-    CTex(const CTex& other);
-    CTex& operator=(const CTex& other);
-    CTex(CTex &&other);
-    CTex& operator=(CTex &&other);
+    CMath2Tex(const CMath2Tex& other);
+    CMath2Tex& operator=(const CMath2Tex& other);
+    CMath2Tex(CMath2Tex &&other);
+    CMath2Tex& operator=(CMath2Tex &&other);
     
 public:
     /**
@@ -113,4 +113,4 @@ private:
     std::unordered_map<std::string, int>  grouped_hits_;
 };
     
-#endif /* ctex_hpp */
+#endif /* cmath2tex_hpp */

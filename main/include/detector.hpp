@@ -9,7 +9,7 @@
 #ifndef detector_hpp
 #define detector_hpp
 
-#include "ctex.hpp"
+#include "cmath2tex.hpp"
 #include <memory>
 
 /**
@@ -20,9 +20,9 @@ class Detector
 {
 public:
     /**
-     * @param[in] ctex CTex instance to perform conversion from C to TeX
+     * @param[in] cmath2tex CMath2Tex instance to perform conversion from C to TeX
      */
-    Detector(std::shared_ptr<CTex> ctex);
+    Detector(std::shared_ptr<CMath2Tex> cmath2tex);
     ~Detector() = default;
     
     /**
@@ -49,7 +49,7 @@ private:
 private:
     int min_op_count_;              ///< @brief min operation count
     int min_fn_count_;              ///< @brief min function count
-    std::shared_ptr<CTex> ctex_;    ///< @brief CTex instance
+    std::shared_ptr<CMath2Tex> cmath2tex_;    ///< @brief CMath2Tex instance
 };
 
 #endif /* detector_hpp */

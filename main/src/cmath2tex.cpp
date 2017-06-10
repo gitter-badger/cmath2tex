@@ -1,12 +1,12 @@
 /**
- * @file ctex.cpp
+ * @file cmath2tex.cpp
  * @date 03.06.17
  * @author galarius
  * @copyright Copyright © 2017 galarius. All rights reserved.
  * @brief Formla parser and converter from C language into LaTeX
  */
 
-#include "ctex.hpp"
+#include "cmath2tex.hpp"
 #include "ltree.hpp"
 #include "glogger.hpp"
 #include "i18n.hpp"
@@ -16,7 +16,7 @@
 //-------------------------------------------------------------------//
 
 
-CTex::CTex(const std::vector<std::pair<std::string, std::string>>& grouped_regs)
+CMath2Tex::CMath2Tex(const std::vector<std::pair<std::string, std::string>>& grouped_regs)
 : grouped_regs_(grouped_regs)
 {
     // build full regex expresion
@@ -36,14 +36,14 @@ CTex::CTex(const std::vector<std::pair<std::string, std::string>>& grouped_regs)
     }
 }
 
-CTex::CTex(const CTex& other) :
+CMath2Tex::CMath2Tex(const CMath2Tex& other) :
 regex_txt_(other.regex_txt_)
 , grouped_regs_(other.grouped_regs_)
 , grouped_hits_(other.grouped_hits_)
 { }
 
 
-CTex& CTex::operator=(const CTex& other)
+CMath2Tex& CMath2Tex::operator=(const CMath2Tex& other)
 {
     if(this != &other)
     {
@@ -54,14 +54,14 @@ CTex& CTex::operator=(const CTex& other)
     return *this;
 }
 
-CTex::CTex(CTex &&other)  :
+CMath2Tex::CMath2Tex(CMath2Tex &&other)  :
 regex_txt_(std::move(other.regex_txt_))
 , grouped_regs_(std::move(other.grouped_regs_))
 , grouped_hits_(std::move(other.grouped_hits_))
 { }
 
 
-CTex& CTex::operator=(CTex &&other)
+CMath2Tex& CMath2Tex::operator=(CMath2Tex &&other)
 {
     if(this != &other)
     {
@@ -76,7 +76,7 @@ CTex& CTex::operator=(CTex &&other)
 // Public methods
 //-------------------------------------------------------------------//
 
-std::vector<std::pair<std::string, std::string>> CTex::default_regex()
+std::vector<std::pair<std::string, std::string>> CMath2Tex::default_regex()
 {
     std::string fregex;
     auto cfunc_library = LexemeLibrary::get_lexemes(LexemeLibrary::function);
@@ -107,7 +107,7 @@ std::vector<std::pair<std::string, std::string>> CTex::default_regex()
     };
 }
 
-std::string CTex::translate(const std::string& in, EQUATION_TAG_STYLE style)
+std::string CMath2Tex::translate(const std::string& in, EQUATION_TAG_STYLE style)
 {
     // build LaTeX expression
     std::string result = eq_open_tag(style);
@@ -118,7 +118,7 @@ std::string CTex::translate(const std::string& in, EQUATION_TAG_STYLE style)
     return result;
 }
 
-int CTex::group_hits(const std::string& group)
+int CMath2Tex::group_hits(const std::string& group)
 {
     if (grouped_hits_.find(group) != grouped_hits_.end())
     {
@@ -135,7 +135,7 @@ int CTex::group_hits(const std::string& group)
 // Private methods
 //-------------------------------------------------------------------//
 
-std::string CTex::translate(const std::vector<std::string>& tokens)
+std::string CMath2Tex::translate(const std::vector<std::string>& tokens)
 {
     std::vector<Lexeme> toperators;
     std::vector<Lexeme> lexemes;
@@ -210,7 +210,7 @@ std::string CTex::translate(const std::vector<std::string>& tokens)
     return tr.transform();	// apply transformation
 }
 
-size_t CTex::match_index(std::sregex_iterator it)
+size_t CMath2Tex::match_index(std::sregex_iterator it)
 {
     size_t index = 0;
     for (; index < it->size(); ++index) {
@@ -222,7 +222,7 @@ size_t CTex::match_index(std::sregex_iterator it)
     return index;
 }
 
-std::vector<std::string> CTex::lexical_analyzer(const std::string& in)
+std::vector<std::string> CMath2Tex::lexical_analyzer(const std::string& in)
 {
     std::vector<std::string> tokens;
     grouped_hits_.clear();
@@ -251,7 +251,7 @@ std::vector<std::string> CTex::lexical_analyzer(const std::string& in)
     return tokens;
 }
 
-std::string CTex::eq_open_tag(CTex::EQUATION_TAG_STYLE style)
+std::string CMath2Tex::eq_open_tag(CMath2Tex::EQUATION_TAG_STYLE style)
 {
     switch (style) {
         case DISPLAY:   return R"!($$ )!";
@@ -260,7 +260,7 @@ std::string CTex::eq_open_tag(CTex::EQUATION_TAG_STYLE style)
     }
 }
 
-std::string CTex::eq_close_tag(CTex::EQUATION_TAG_STYLE style)
+std::string CMath2Tex::eq_close_tag(CMath2Tex::EQUATION_TAG_STYLE style)
 {
     switch (style) {
         case DISPLAY:   return R"!( $$)!";

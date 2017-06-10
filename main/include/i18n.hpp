@@ -7,8 +7,8 @@
  * @todo implement
  */
 
-#ifndef ctex_i18n_hpp
-#define ctex_i18n_hpp
+#ifndef cmath2tex_i18n_hpp
+#define cmath2tex_i18n_hpp
 
 #include <string>
 
@@ -22,4 +22,4 @@ inline std::string operator "" _i18n(const char* str, size_t /*length*/)
     return tr;
 }
 
-#endif  // ctex_i18n_hpp
+#endif  // cmath2tex_i18n_hpp

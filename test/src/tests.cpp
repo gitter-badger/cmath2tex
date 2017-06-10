@@ -5,14 +5,14 @@
 
 #include <memory>
 
-#include "ctex.hpp"
+#include "cmath2tex.hpp"
 
-std::shared_ptr<CTex> ctex;
+std::shared_ptr<CMath2Tex> cmath2tex;
 
 std::string run(const std::string& cformula)
 {
     GLogger::instance().logInfo("in: ", cformula);
-    std::string latex_formula = ctex->translate(cformula, CTex::DISPLAY);
+    std::string latex_formula = cmath2tex->translate(cformula, CMath2Tex::DISPLAY);
     GLogger::instance().logInfo("out: ", latex_formula);
     GLogger::instance().logInfo("");
     return latex_formula;
@@ -52,8 +52,8 @@ int main( int argc, char* argv[] )
 {
     GLogger::instance().set_output_mode(GLogger::Console);
     GLogger::instance().set_min_level(GLogger::Console, GLogger::Info);
-    ctex = std::make_shared<CTex>(CTex::default_regex());
+    cmath2tex = std::make_shared<CMath2Tex>(CMath2Tex::default_regex());
     int result = Catch::Session().run( argc, argv );
-    ctex.reset();
+    cmath2tex.reset();
     return ( result < 0xff ? result : 0xff );
 }

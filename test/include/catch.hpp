@@ -909,7 +909,7 @@ namespace Catch {
         virtual bool isBinaryExpression() const {
             return false;
         }
-        virtual void reconstructExpression( std::string& dest ) const = 0;
+        virtual void reconstrucmath2texpression( std::string& dest ) const = 0;
 
         // Only simple binary comparisons can be decomposed.
         // If more complex check is required then wrap sub-expressions in parentheses.
@@ -955,9 +955,9 @@ namespace Catch {
                 resultType = ResultWas::Ok;
         }
 
-        std::string const& reconstructExpression() const {
+        std::string const& reconstrucmath2texpression() const {
             if( decomposedExpression != CATCH_NULL ) {
-                decomposedExpression->reconstructExpression( reconstructedExpression );
+                decomposedExpression->reconstrucmath2texpression( reconstructedExpression );
                 if( parenthesized ) {
                     reconstructedExpression.insert( 0, 1, '(' );
                     reconstructedExpression.append( 1, ')' );
@@ -1220,7 +1220,7 @@ namespace Catch {
 
         void endExpression( DecomposedExpression const& expr );
 
-        virtual void reconstructExpression( std::string& dest ) const CATCH_OVERRIDE;
+        virtual void reconstrucmath2texpression( std::string& dest ) const CATCH_OVERRIDE;
 
         AssertionResult build() const;
         AssertionResult build( DecomposedExpression const& expr ) const;
@@ -1848,7 +1848,7 @@ public:
             .endExpression( *this );
     }
 
-    virtual void reconstructExpression( std::string& dest ) const CATCH_OVERRIDE {
+    virtual void reconstrucmath2texpression( std::string& dest ) const CATCH_OVERRIDE {
         dest = Catch::toString( m_truthy );
     }
 
@@ -1887,7 +1887,7 @@ public:
         return true;
     }
 
-    virtual void reconstructExpression( std::string& dest ) const CATCH_OVERRIDE {
+    virtual void reconstrucmath2texpression( std::string& dest ) const CATCH_OVERRIDE {
         std::string lhs = Catch::toString( m_lhs );
         std::string rhs = Catch::toString( m_rhs );
         char delim = lhs.size() + rhs.size() < 40 &&
@@ -1921,7 +1921,7 @@ public:
         return true;
     }
 
-    virtual void reconstructExpression( std::string& dest ) const CATCH_OVERRIDE {
+    virtual void reconstrucmath2texpression( std::string& dest ) const CATCH_OVERRIDE {
         std::string matcherAsString = m_matcher.toString();
         dest = Catch::toString( m_arg );
         dest += ' ';
@@ -7990,7 +7990,7 @@ namespace Catch {
     }
 
     std::string AssertionResult::getExpandedExpression() const {
-        return m_resultData.reconstructExpression();
+        return m_resultData.reconstrucmath2texpression();
     }
 
     std::string AssertionResult::getMessage() const {
@@ -8009,7 +8009,7 @@ namespace Catch {
     }
 
     void AssertionResult::expandDecomposedExpression() const {
-        m_resultData.reconstructExpression();
+        m_resultData.reconstrucmath2texpression();
     }
 
 } // end namespace Catch
@@ -9059,7 +9059,7 @@ namespace Catch {
         return AssertionResult( m_assertionInfo, data );
     }
 
-    void ResultBuilder::reconstructExpression( std::string& dest ) const {
+    void ResultBuilder::reconstrucmath2texpression( std::string& dest ) const {
         dest = m_assertionInfo.capturedExpression;
     }
 
